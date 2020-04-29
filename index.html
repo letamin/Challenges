@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--- Required meta tags --->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!------- Bootstrap ------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-------Customer css------->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+
+    <title>My Javascript challenges</title>
+  </head>
+<body>
+    <!--Challenge 1: Your age in days-->
+    <div class="container">
+        <h2>Challenge 1: Your Age in Days</h2>
+        <div class="flex-box-container">
+            <button onclick="ageInDays()" class="btn btn-primary" >Click me</button>
+            <button onclick="reset()" class="btn btn-danger">Reset</button>
+        </div>
+        <div class="flex-container-1">
+            <div class="flex-box-result"></div>
+        </div>
+    </div>
+
+    <!--Challenge 2: Cat Generator-->
+    <div class="container">
+        <h2>Challenge 2: Cat Generator</h2>
+        <div class="flex-box-container">
+            <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+            <button onclick="resetCat()" class="btn btn-danger">Reset</button>
+        </div>
+        <div class="flex-box-container" id="flex-cat-gen">
+        </div>      
+    </div>
+    
+    <!--Challenge 3: Rock, paper, Scissors-->
+    <div class="container">
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" class="img" src="images/rock.png" alt="Rock" onclick="rpsGame(this)">
+            <img id="paper" class="img" src="images/paper.png" alt="Paper" onclick="rpsGame(this)">
+            <img id="scissors" class="img" src="images/scissors.jpg" alt="Scissors" onclick="rpsGame(this)">
+        </div>
+        <button class="hidden" onclick="resetGame()" id="resetBtn">Again</button>
+    </div>
+    
+    <!--Challenge 4: Change the color of all the buttons on page-->
+    <div class="container">
+        <h2 id="change-my-color">Challenge 4: Change the color of All buttons</h2>
+        <div class="flex-box-pick-color">
+            <form>
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>    
+</body>
+</html>
