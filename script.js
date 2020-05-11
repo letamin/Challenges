@@ -21,9 +21,10 @@ function reset(){
 
 //Challenge 1: Your Age in days (second way) -- do not accept invalid numbers or negative numbers
 function ageInDays() {
+    var year = new Date();
     var birthYear = prompt("What year you were born my friend?");
-    var result = (2020 - birthYear) * 365;
-    if (isNaN(result) || birthYear <= 0 || birthYear > 2020) {
+    var result = (year.getFullYear() - birthYear) * 365;
+    if (isNaN(result) || birthYear <= 0 || birthYear > year.getFullYear()) {
         alert("Please enter a valid number ");
         return;
     } else {
